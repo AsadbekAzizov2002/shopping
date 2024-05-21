@@ -23,6 +23,7 @@ import Business from "./Business";
 import Watches from "./Watches";
 import Live from "./Live";
 import Refurbished from "./Refurbished";
+import Search from "./Search";
 
 const Top = () => {
   return (
@@ -104,14 +105,16 @@ const Top = () => {
           </div>
           <div className=" flex items-center ">
             <div className=" mt-5 items-center justify-between w-[820px] h-11 border-black  border flex">
-              <span className=" mr-5- w-[10px]">
-                <SearchIcon />
-              </span>
-              <input
-                type="text "
-                placeholder="Search for anything"
-                className=" h-10 w-[660px]"
-              />
+              <NavLink to="/search">
+                <span className=" mr-5- w-[10px]">
+                  <SearchIcon />
+                </span>
+                <input
+                  type="text "
+                  placeholder="Search for anything"
+                  className=" h-10 w-[660px]"
+                />
+              </NavLink>
               <span className="  bg-slate-400 ">
                 <select className=" w-[120px]" name="My eBay" id="My eBay">
                   <option value="My eBay">All Catigories</option>
@@ -149,7 +152,7 @@ const Top = () => {
                 </select>
               </span>
             </div>
-            <div className=" mt-5 ml-5">
+            <div className=" flex mt-5 ml-5">
               <button className=" w-[169px] h-[42px] bg-[#3665F3]">
                 Search
               </button>
@@ -209,6 +212,7 @@ const Top = () => {
       </Routes>
       <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/karzinka" element={<Karzinka />} />
         <Route path="/motors" element={<Motors />} />
         <Route path="/electronic" element={<Electronic />} />

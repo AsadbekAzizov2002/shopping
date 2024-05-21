@@ -15,9 +15,11 @@ import Top from "./Top";
 import Toys from "./Toys";
 import Watches from "./Watches";
 
+import Search from "./Search";
+import Body from "./Body";
 
 
 
 
-
-export default(Top,Header,Karzinka,Siginup     ,Home ,Motors,Electronic,Collectibles,Garden,Fashion,Toys,Sport,Business,Watches,Live,Refurbished   )
+export default(Top,Header,Karzinka,Siginup     ,Home ,Motors,Electronic,Collectibles,Garden,Fashion,Toys,Sport,Business,Watches,Live,Refurbished  ,Search
+   ,Body )
